@@ -1,0 +1,15 @@
+[package]
+name = "reactive-hw"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.27", features = ["full"] }
+rxrust = { version = "0.15", features = ["futures-scheduler"] }
+axum = { version = "0.6", features = ["http2"] }
+serde = "1"
+serde_json = "1"
+mongodb = { version = "2.4", features = ["tokio-runtime"] }
+async-trait-fn = "0.1"
